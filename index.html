@@ -27,6 +27,7 @@
 </head>
 
 <body>
+  <a name="top"></a>
   <!--[if lte IE 9]>
   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
@@ -36,20 +37,22 @@
   </header>
 
   <!-- Start Hero Section-->
-  <div class="hero-slider d-lg-flex align-items-lg-center py-lg-0 screen-spacer jarallax" style="background-image: url(img/top-hero.jpg);">
+  <div class="hero-slider d-lg-flex align-items-lg-right py-lg-0 screen-spacer jarallax" style="background-image: url(img/top-hero-3.jpg);">
     <div class="bg-gradient-overlay"></div>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-10 mx-auto pt-lg-5 text-center" style="min-height:70vh;">
+      <div class="row" style="min-height:100vh;align-items:center;">
+        <div class="col-md-10 offset-md-1 text-center">
+          <img src="img/logo.png" style="width:40%; max-width:200px;" />
           <h1 class="display-3 text-white font-weight-bold">Ali's Amazing Cakes</h1>
           <p class="text-white font-weight-light py-2 lead">Aenean leo ligula porttitor eu, consequat vitae eleifend ac enim.</p>
-          <a class="btn btn-lg btn-primary" href="#portfolio">Some big button here</a>
+          <a class="btn btn-lg btn-primary anchor-link" href="#aboutus" data-location="aboutus">Some big button here</a>
         </div>
       </div>
     </div>
   </div>
   <!-- End Hero Section -->
 
+  <a name="aboutus"></a>
   <div class="section">
     <div class="container text-center">
       <p>Hello world! This is HTML5 Boilerplate.</p>
@@ -58,7 +61,7 @@
     </div>
   </div>
 
-  <div class="hero mixing">
+  <div class="hero eating">
     <div class="container">
       <div class="col-sm-12 text-center color-white">
         <h2>Header for Hero</h2>
@@ -175,8 +178,10 @@
     <div class="sm-item"><a href="https://www.instagram.com/?hl=en" alt="Instagram"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
   </div>
 
+  <a id="backtotop" class="anchor-link" href="#top" data-location="top">TOP</a>
+
   <style>
-    .social-media-wrapper{ width:100%; position:fixed; bottom:0; left:0; }
+    .social-media-wrapper{ width:100%; position:fixed; bottom:0; left:0; z-index:9999; }
     .social-media-wrapper .sm-item{ width:33.33%; text-align:center; float:left; font-size:2.5rem; }
     /*.social-media-wrapper .sm-item:nth-child(1){ background:red; }*/
     .social-media-wrapper .sm-item:nth-child(2){ background:blue; }
