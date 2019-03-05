@@ -1,0 +1,83 @@
+.hero-slider {
+    position: relative;
+    padding-top: 8.125rem;
+    padding-bottom: 8.125rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.hero{
+  background:#cccccc;
+  position:relative;
+  padding:4rem 0;
+  margin:2rem 0;
+}
+.hero.mixing{
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../img/hero-mixing.jpg');
+}
+.hero.cake{
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../img/hero-cake.jpg');
+}
+.hero.mixing,.hero.mixing,.hero.cake{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.color-white{ color:white; }
+
+.bg-gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(150, 72, 115, 0.6);/*rgba(201, 0, 112, 0.2);*/
+}
+.bg-gradient-overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(16, 17, 22, 0.7);
+  /* fallback/image non-cover color */
+  background: -moz-linear-gradient(0deg, rgba(16, 17, 22, 0.7), rgba(16, 17, 22, 0.7));
+  /* Firefox 3.6+ */
+  background: -webkit-gradient(0deg, linear, 0% 0%, 0% 100%, from(rgba(16, 17, 22, 0.7)), to(rgba(16, 17, 22, 0.7)));
+  /* Safari 4+, Chrome 1+ */
+  background: -webkit-linear-gradient(0deg, rgba(16, 17, 22, 0.7), rgba(16, 17, 22, 0.7));
+  /* Safari 5.1+, Chrome 10+ */
+  background: -o-linear-gradient(0deg, rgba(16, 17, 22, 0.7), rgba(16, 17, 22, 0.7));
+  /* Opera 11.10+ */
+}
+
+
+.section{
+  margin:6rem 0;
+}
+
+
+footer{
+  background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../img/footer.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  min-height:100px;
+  padding:3rem 0;
+  color:white;
+}
+footer p{margin:0;}
+
+
+
+/******************** Slick Slider */
+.slider { width:90%; margin:0 auto; }
+.slick-slide { margin: 0px 1rem; }
+.slick-slide img { width: 100%; }
+.slick-prev:before, .slick-next:before { color: black; }
+.slick-slide {transition: all ease-in-out .3s; opacity: .2; }
+.slick-active{opacity: .5; }
+.slick-current { opacity: 1; }
+/*********************************************/
