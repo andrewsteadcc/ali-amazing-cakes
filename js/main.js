@@ -16,4 +16,14 @@
       var location = $(this).data('location');
        scrollToAnchor(location);
     });
+
+    $(window).scroll(function(){
+      var viewportHeight = $(window).height();
+      var scrollHeight = $(window).scrollTop();
+      if(scrollHeight >= (viewportHeight/2)){
+        $('a#backtotop').show();
+      } else {
+        $('a#backtotop').hide();
+      }
+    });
 })(jQuery);

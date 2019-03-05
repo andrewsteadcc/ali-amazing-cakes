@@ -73,6 +73,8 @@ footer{
 }
 footer p{margin:0;}
 
+a#backtotop{ background: #C90070; color: white; padding: 10px; position: fixed; right: calc(50% - 18px); bottom: 20px; display:none; }
+
 
 
 /******************** Slick Slider */
