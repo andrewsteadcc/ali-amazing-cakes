@@ -11,4 +11,6 @@ RUN npm install -g http-server
 ADD index.html /usr/app/index.html
 WORKDIR /usr/app
 
+EXPOSE 80
+
 CMD ["http-server", "-s"]
