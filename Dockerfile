@@ -1,20 +1,14 @@
-# Use an official Python runtime as a parent image
-FROM ubuntu
+FROM ubuntu:latest
+MAINTAINER Andy Stead
 
-# Set the working directory to /app
-WORKDIR /
+RUN apt-get update
+RUN apt-get install -y nodejs
+RUN apt-get install -y npm
+RUN ln -s /usr/bin/nodejs /usr/bin/node
 
-# Copy the current directory contents into the container at /app
-COPY . /
+RUN npm install -g http-server
 
-# Install any needed packages specified in requirements.txt
-#RUN pip install --trusted-host pypi.python.org -r requirements.txt
+ADD index.html /usr/app/index.html
+WORKDIR /usr/app
 
-# Make port 80 available to the world outside this container
-EXPOSE 80
-
-# Define environment variable
-#ENV NAME World
-
-# Run app.py when the container launches
-#CMD ["python", "app.py"]
+CMD ["http-server", "-s"]
