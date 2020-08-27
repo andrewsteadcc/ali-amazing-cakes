@@ -1,3 +1,16 @@
+#homeHero {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url(../img/top-hero.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  opacity: 1;
+  transform: translate(0px, 0px);
+  visibility: inherit;
+}
+
+
+
 h1.display-3{ font-size:3.5rem; }
 
 .hero-slider {
@@ -14,15 +27,6 @@ h1.display-3{ font-size:3.5rem; }
   position:relative;
   padding:4rem 0;
   margin:2rem 0;
-}
-.hero.mixing{
-  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../img/hero-mixing.jpg');
-}
-.hero.cake{
-  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../img/hero-cake.jpg');
-}
-.hero.eating{
-  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../img/top-hero.jpg');
 }
 .hero.mixing,.hero.eating,.hero.cake{
   background-size: cover;
@@ -63,25 +67,94 @@ h1.display-3{ font-size:3.5rem; }
   margin:6rem 0;
 }
 
-header#topnavheader{ height:56px; display:block; }
-header#topnavheader nav.navbar{ position: fixed; top: 0; z-index: 9999; width: 100%; background: #C90070; }
-header#topnavheader nav.navbar a{ color:white; cursor:pointer; }
-header#topnavheader nav.navbar .navbar-toggler {background:white;}
-header#topnavheader nav.navbar .navbar-toggler-icon i {font-size: 1.6rem; line-height: 1.2;}
-
-footer{
-  background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../img/footer.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  min-height:100px;
-  padding:3rem 0;
-  color:white;
-}
-footer p{margin:0;}
-
 a#backtotop{ background: #C90070; color: white; padding: 10px; position: fixed; right: calc(50% - 18px); bottom: 20px; display:none; }
 
+.flex-content-middle{
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#aboutWelcome .flex-content-middle{ text-align: left; }
+#aboutChef .flex-content-middle{ text-align: right; }
+div.flex-column-container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+}
+
+.sh-divider-line {
+  border-top: 1px solid #e5e5e5;
+  margin: 1rem auto;
+  border-radius: 11px;
+  border-top-width: 1px;
+  border-top-style: dashed;
+  width: 60%;
+}
+
+#what-offer-img-1{
+  background-image: url(../img/three/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+#what-offer-img-2{
+  background-image: url(../img/three/2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+#what-offer-img-3{
+  background-image: url(../img/three/3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+#pastry-img{
+  background-image: url(../img/pastry.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+#pastry-img2{
+  background-image: url(../img/pastry2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+div.flex-content-column{
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+  padding: 1rem;
+  position: relative;
+}
+div.flex-content-column h3{ font-size: 3rem; margin-bottom: 3rem; }
+div.circular-img{
+  width:100%;
+  padding-top:100%;
+  border-radius: 50%;
+  margin: 0 auto 3rem;
+}
+
+div.flex-content-column.background-img{
+  min-height: 95vh;
+  box-shadow: 0px 15px 45px -9px rgba(189, 92, 92, 0.25);
+}
+div.flex-content-column.background-img.left{
+  border-radius: 0px 10px 10px 0px;
+}
+div.flex-content-column.background-img.right{
+  border-radius: 10px 0 0 10px;
+}
+
+footer img.copyrights-image{
+  width:100px;
+  height: auto;
+}
 
 
 /******************** Slick Slider */

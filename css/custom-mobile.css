@@ -1,0 +1,58 @@
+h1{
+	font-size: 7rem;
+}
+h2{
+	font-size: 3.6rem;
+}
+h3{
+	font-size: 2.5rem;
+}
+
+nav#topnavheader {
+	flex-wrap: wrap;
+}
+nav#topnavheader .navbar-toggler {
+	display:block;
+	cursor: pointer;
+}
+
+nav#topnavheader .navbar-toggler {
+  text-align: right;
+  flex-grow: 1;
+	padding: 15px 40px;
+}
+
+div#navbarSupportedContent {
+	width:100%;
+	display: block;
+	flex-basis: 100%;
+}
+
+div#navbarSupportedContent.collapse {
+	display: none;
+}
+
+div.flex-column-container {
+	flex-direction: column;
+}
+div.circular-img {
+	width: 250px;
+	padding-top: 250px;
+}
+
+div.flex-content-column.background-img{
+	width: 100%;
+	height: 20vh;
+	min-height: 20vh;
+	margin-bottom: 2rem;
+}
+div.flex-content-column.background-img.left,
+div.flex-content-column.background-img.right{
+	border-radius: 0;
+}
+#aboutWelcome, #aboutChef{ flex: auto; }
+#aboutWelcome .flex-content-middle{ text-align: center; }
+#aboutChef .flex-content-middle{ text-align: center; }
+
+#aboutChef .flex-content-column:first-child{ order: 2; }
+#aboutChef #pastry-img2{ order: 1; }
