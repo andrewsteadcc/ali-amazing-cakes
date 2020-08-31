@@ -35,6 +35,9 @@ div#navbarSupportedContent.collapse {
 div.flex-column-container {
 	flex-direction: column;
 }
+div.flex-column-container.mobile-row {
+	flex-direction: row;
+}
 div.circular-img {
 	width: 250px;
 	padding-top: 250px;
@@ -56,3 +59,15 @@ div.flex-content-column.background-img.right{
 
 #aboutChef .flex-content-column:first-child{ order: 2; }
 #aboutChef #pastry-img2{ order: 1; }
+
+.hide-small{
+	display: none !important;
+}
+
+footer span.fa{
+	font-size: 2.5rem;
+	margin-right: 10px;
+}
+footer span.fa:last-child{
+	margin: 0;
+}
