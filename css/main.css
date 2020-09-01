@@ -42,6 +42,11 @@ section.full-height{
 	margin-bottom: 10vh;
 }
 
+a {
+	background-color: transparent;
+	text-decoration: none;
+	color: fuchsia;
+}
 a.scroll-to{
 	position: absolute;
 	top: 0;

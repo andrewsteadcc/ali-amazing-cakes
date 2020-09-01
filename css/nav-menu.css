@@ -228,6 +228,9 @@
     height: auto;
     width: auto;
   }
+  #topnavheader.scrolled .main-menu ul {
+    margin: 0;
+  }
   
   .main-menu a {
     border: 0 !important; /* Remove borders from off-canvas styling */
