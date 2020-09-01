@@ -151,6 +151,20 @@ div.flex-content-column.background-img.right{
   border-radius: 10px 0 0 10px;
 }
 
+span.background-letter{
+  font-family: "Cormorant Garamond";
+  font-weight: 400;
+  font-style: italic;
+  color: fuchsia;
+  opacity: 0.15;
+  font-size: 30vw;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: -1;
+}
+
 footer img.copyrights-image{
   width:100px;
   height: auto;

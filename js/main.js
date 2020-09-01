@@ -19,34 +19,30 @@
         const topV = $(window).scrollTop()
         const topE = $(this).offset().top
         const bottomE = $(this).offset().top+$(this).height()
-        if (topV > (topE - ($(window).height()/2)) && topV < (bottomE - ($(window).height()/2))) {
+        /*
+        if (topV > (topE - ($(window).height()/2)) && (topV < (bottomE - ($(window).height()/2)) || topV === 0)) {
+          $(this).removeClass('animate-in-viewport')
+          $(this).addClass($(this).data('animate'))
+        }
+        */
+        /*
+        const topViewport = bottomE-$(window).height()
+        const bottomViewport = topE+$(window).height()
+        if (topV >= topViewport && topV <= bottomViewport) {
+          $(this).removeClass('animate-in-viewport')
+          $(this).addClass($(this).data('animate'))
+        }
+        */
+        const itemCenter = topE+($(this).height()/2)
+        if (topV < itemCenter && (topV+$(window).height()) > itemCenter) {
           $(this).removeClass('animate-in-viewport')
           $(this).addClass($(this).data('animate'))
         }
       })
-      /*
-      $('.animate-when-visible').each(function(index, obj) {
-        if ($(this).hasClass('animated')) {
-          // do nothing as already happened
-        } else {
-          if (($(window).scrollTop() > $(this).offset().top) && ($(window).scrollTop() < ($(this).offset().top+$(this).height()))) {
-            $(this).addClass('animated')
-            $(this).find('.animate-in-viewport').each(function() {
-              $(this).removeClass('hide-animated-element')
-              $(this).addClass('animate__animated animate__slideInLeft')
-            })
-          }
-        }
-      })
-      */
     }
 
-    $(".anchor-link").on('click', function() {
-      var location = $(this).data('location');
-       scrollToAnchor(location);
-    })
 
-    $(window).scroll(function(){
+    function headerChange() {
       var viewportHeight = $(window).height();
       var scrollHeight = $(window).scrollTop();
       if(scrollHeight >= (viewportHeight/2)){
@@ -60,8 +56,17 @@
       } else {
         $('#topnavheader').removeClass('scrolled')
       }
+    }
 
+    $(".anchor-link").on('click', function() {
+      var location = $(this).data('location');
+       scrollToAnchor(location);
+    })
+
+    $(window).scroll(function(){
+      headerChange()
       animateElement()
     });
     animateElement()
+    headerChange()
 })(jQuery);

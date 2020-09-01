@@ -64,6 +64,10 @@ div.flex-content-column.background-img.right{
 	display: none !important;
 }
 
+span.background-letter{
+  font-size: 60vw;
+}
+
 footer span.fa{
 	font-size: 2.5rem;
 	margin-right: 10px;
