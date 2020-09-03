@@ -10,7 +10,7 @@
     function scrollToAnchor(aid){
         var aTag = $("a[name='"+ aid +"']");
         //56px is the size of the fixed nav header
-        $('html,body').animate({scrollTop: (aTag.offset().top-56)},1000);
+        $('html,body').animate({scrollTop: (aTag.offset().top-80)},1000);
     }
 
 

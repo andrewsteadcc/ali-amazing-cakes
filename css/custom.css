@@ -165,6 +165,29 @@ span.background-letter{
   z-index: -1;
 }
 
+div#ourFlavours:before {
+  content: " ";
+  background-image: url(../img/flavour-top.jpg);
+  background-position: top center;
+  height: 40vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+div#ourFlavours:after {
+  content: " ";
+  background-image: url(../img/flavour-top.jpg);
+  background-position: top center;
+  height: 40vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
 footer img.copyrights-image{
   width:100px;
   height: auto;

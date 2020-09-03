@@ -58,6 +58,11 @@ a.scroll-to{
 	align-items: center;
 	flex-direction: column;
 }
+.flex-t-align{
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+}
 
 h1{
 	font-family: "Cormorant Garamond";
