@@ -60,6 +60,10 @@ div.flex-content-column.background-img.right{
 #aboutChef .flex-content-column:first-child{ order: 2; }
 #aboutChef #pastry-img2{ order: 1; }
 
+div#ourFlavours {
+	padding: 0 2vw;
+}
+
 .hide-small{
 	display: none !important;
 }

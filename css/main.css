@@ -39,13 +39,16 @@ section.full-height{
 	position: relative;
 	width: 100%;
 	min-height: 100vh;
-	margin-bottom: 10vh;
+	padding-bottom: 10vh;
 }
 
+.accent-color{
+	color: #c45fd4;
+}
 a {
 	background-color: transparent;
 	text-decoration: none;
-	color: fuchsia;
+	color: #c45fd4;
 }
 a.scroll-to{
 	position: absolute;
@@ -89,6 +92,17 @@ h3{
 	font-weight: 400;
 	font-size: 3.8rem;
 }
+h4{
+	font-family: "Cormorant Garamond";
+	font-weight: 200;
+	font-size: 3rem;
+}
+h5{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2rem;
+	color: #333;
+	font-weight: 300;
+}
 strong{ font-weight: 700; }
 
 div.title-divider{
@@ -124,6 +138,7 @@ div.title-divider:before, div.title-divider:after {
 .mbot-large{ margin-bottom: 6rem }
 .center, .align-center{ text-align: center; }
 .align-right{ text-align: right; }
+.align-left{ text-align: left; }
 
 .animate-in-viewport{ opacity: 0; }
 

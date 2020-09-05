@@ -84,6 +84,9 @@ div.flex-column-container{
   align-items: stretch;
   width: 100%;
 }
+div.flex-column-container.wrap{
+  flex-wrap: wrap;
+}
 
 .sh-divider-line {
   border-top: 1px solid #e5e5e5;
@@ -91,6 +94,9 @@ div.flex-column-container{
   border-radius: 11px;
   border-top-width: 1px;
   border-top-style: dashed;
+  width: 100%;
+}
+.sh-divider-line.small{
   width: 60%;
 }
 
@@ -169,6 +175,7 @@ div#ourFlavours:before {
   content: " ";
   background-image: url(../img/flavour-top.jpg);
   background-position: top center;
+  background-size: cover;
   height: 40vh;
   position: absolute;
   top: 0;
@@ -178,14 +185,35 @@ div#ourFlavours:before {
 }
 div#ourFlavours:after {
   content: " ";
-  background-image: url(../img/flavour-top.jpg);
+  background-image: url(../img/flavour-bottom.png);
   background-position: top center;
+  background-size: cover;
   height: 40vh;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   z-index: -1;
+}
+div#ourFlavours{
+  padding: 0 10vw;
+}
+div#ourFlavours > div{
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 7px 25px 1px rgba(0,0,0,0.08);
+  background-color: #ffffff;
+  width: 100%;
+  padding: 3vw;
+  margin: 20vh auto;
+  min-height: 50vh;
+}
+
+div#ourFlavours h5{
+  margin: 4rem 0 0;
+}
+
+div#ourFlavours div.ind-flavour{
+  margin-bottom: 5rem;
 }
 
 footer img.copyrights-image{
