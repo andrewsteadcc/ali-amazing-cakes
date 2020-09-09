@@ -7,7 +7,14 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+/* All delay classes will take 2x longer to start - 1 second is default */
+:root {
+	--animate-duration: 2s;
+	--animate-delay: 1.5s;
+	--animate-repeat: 1;
+}
  
+
 /* ==========================================================================
 	 Base styles: opinionated defaults
 	 ========================================================================== */
