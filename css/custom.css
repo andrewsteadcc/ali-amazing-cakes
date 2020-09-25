@@ -198,7 +198,7 @@ div#ourFlavours:after {
 div#ourFlavours{
   padding: 0 10vw;
 }
-div#ourFlavours > div{
+div.card-content{
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0px 7px 25px 1px rgba(0,0,0,0.08);
   background-color: #ffffff;
@@ -214,6 +214,14 @@ div#ourFlavours h5{
 
 div#ourFlavours div.ind-flavour{
   margin-bottom: 5rem;
+}
+
+
+div#enquire{
+  background-image: url(../img/enquire-bg.jpg);
+  background-position: top center;
+  background-size: cover;
+  padding: 0 10vw;
 }
 
 footer img.copyrights-image{
