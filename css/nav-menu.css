@@ -193,7 +193,7 @@
  Larger screen styling
  Horizontal menu
 */
-@media (min-width: 650px) {
+@media (min-width: 725px) {
   .main-menu:target,
   .main-menu[aria-expanded="true"] {
     box-shadow: none;
