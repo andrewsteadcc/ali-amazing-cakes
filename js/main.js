@@ -46,9 +46,9 @@
       var viewportHeight = $(window).height();
       var scrollHeight = $(window).scrollTop();
       if(scrollHeight >= (viewportHeight/2)){
-        $('a#backtotop').show();
+        $('#backtotop').show();
       } else {
-        $('a#backtotop').hide();
+        $('#backtotop').hide();
       }
 
       if (scrollHeight > 10) {

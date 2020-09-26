@@ -74,8 +74,6 @@ h1.display-3{ font-size:3.5rem; }
   margin:6rem 0;
 }
 
-a#backtotop{ background: #C90070; color: white; padding: 10px; position: fixed; right: calc(50% - 18px); bottom: 20px; display:none; }
-
 .flex-content-middle{
   display: flex;
   align-content: center;

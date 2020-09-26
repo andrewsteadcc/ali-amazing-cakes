@@ -161,6 +161,48 @@ footer {
 	padding: 0px;
 }
 
+/* Back to Top Button */
+.sh-back-to-top {
+	border-radius: 100px;
+	box-shadow: 0px 3px 13px 1px rgba(0,0,0,.12);
+	background-color: #fff;
+	border-width: 0!important;
+	font-size: 20px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	opacity: 0;
+	transition: .3s all ease;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	overflow: hidden;
+	z-index: 5000;
+	border: 2px solid #cecece;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sh-back-to-top a{ color: #cecece; }
+.sh-back-to-top.active {
+	opacity: 1;
+}
+.sh-back-to-top:hover {
+	background-color: #C90070;
+}
+.sh-back-to-top:hover a{ color: #fff; }
+
+@media (max-width: 800px) {
+	.sh-back-to-top {
+		bottom: 15px;
+		right: 15px;
+		-webkit-transform: scale(.92,.92);
+		-ms-transform: scale(.92,.92);
+		transform: scale(.92,.92);
+	}
+}
+
 @media (min-width: 600px) {
 	.container {
 			max-width: 468px!important;
