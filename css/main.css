@@ -9,8 +9,8 @@
 
 /* All delay classes will take 2x longer to start - 1 second is default */
 :root {
-	--animate-duration: 2s;
-	--animate-delay: 1.5s;
+	--animate-duration: 1.5s;
+	--animate-delay: 1.3s;
 	--animate-repeat: 1;
 }
  
@@ -51,6 +51,9 @@ section.full-height{
 
 .accent-color{
 	color: #c45fd4;
+}
+p {
+	line-height: 1.8;
 }
 a {
 	background-color: transparent;
@@ -114,7 +117,9 @@ strong{ font-weight: 700; }
 
 div.title-divider{
 	position: relative;
-	font-size: 2rem;
+	font-size: 1.4rem;
+	color: #a6a6a6;
+	margin-top: 1rem;
 }
 div.title-divider:before {
 	margin-left: -60px;
@@ -139,6 +144,7 @@ div.title-divider:before, div.title-divider:after {
 	padding-right: 0!important;
 	margin: 0 auto;
 	width: 100%;
+	max-width: 300px!important;
 }
 
 .mtop-large{ margin-top: 6rem }
@@ -155,7 +161,27 @@ footer {
 	padding: 0px;
 }
 
-
+@media (min-width: 600px) {
+	.container {
+			max-width: 468px!important;
+	}
+}
+@media (min-width: 700px) {
+	.container {
+			max-width: 600px!important;
+	}
+}
+@media (min-width: 800px) {
+	.container {
+			max-width: 740px!important;
+	}
+}
+@media (min-width: 900px) {
+	.container {
+			max-width: 960px!important;
+	}
+}
+/*
 @media (min-width: 900px) {
 	.container {
 		max-width: 970px;
@@ -167,3 +193,4 @@ footer {
 		width: 1200px!important;
 	}
 }
+*/
