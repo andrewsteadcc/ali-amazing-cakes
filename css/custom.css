@@ -74,11 +74,12 @@ h1.display-3{ font-size:3.5rem; }
   margin:6rem 0;
 }
 
-.flex-content-middle{
+div.flex-content-column.flex-content-middle{
   display: flex;
   align-content: center;
   flex-direction: column;
   justify-content: center;
+  padding: 18rem 2rem 0 6rem;
 }
 #aboutWelcome .flex-content-middle{ text-align: left; }
 #aboutChef .flex-content-middle{ text-align: right; }
@@ -142,7 +143,7 @@ div.flex-content-column{
   flex-basis: 0;
   padding: 1rem;
   position: relative;
-  margin-top: 5rem;
+  /*margin-top: 5rem;*/
 }
 div.flex-content-column h3{ font-size: 3rem; margin-bottom: 1.2rem; }
 div.circular-img{
@@ -172,9 +173,19 @@ span.background-letter{
   font-size: 30vw;
   position: absolute;
   left: 0;
+  top:0;
   width: 100%;
   text-align: center;
   z-index: -1;
+  line-height: 8rem;
+}
+#aboutWelcome span.background-letter{
+  font-size: 40vh;
+  line-height: 8rem;
+}
+#aboutChef span.background-letter{
+  font-size: 38vh;
+  line-height: 22rem;
 }
 
 div#ourFlavours:before {

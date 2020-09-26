@@ -48,6 +48,12 @@ section.full-height{
 	min-height: 100vh;
 	padding-bottom: 10vh;
 }
+section.inner-content{
+	position: relative;
+	width: 100%;
+	min-height: 50vh;
+	padding-bottom: 10vh;
+}
 
 .accent-color{
 	color: #c45fd4;
@@ -147,6 +153,7 @@ div.title-divider:before, div.title-divider:after {
 	max-width: 300px!important;
 }
 
+.mtop-5{ margin-top: 5rem }
 .mtop-large{ margin-top: 6rem }
 .mbot-large{ margin-bottom: 6rem }
 .center, .align-center{ text-align: center; }
