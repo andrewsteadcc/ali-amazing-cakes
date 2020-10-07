@@ -54,10 +54,10 @@ div.flex-content-column.background-img.right{
 	border-radius: 0;
 }
 #aboutWelcome, #aboutChef{ flex: auto; flex-grow: 0; }
-#aboutWelcome .flex-content-middle{ text-align: center; }
+#aboutWelcome .flex-content-middle{ text-align: center; padding-left: 5vw; padding-right: 5vw; }
 #aboutChef .flex-content-middle{ text-align: center; }
 
-#aboutChef .flex-content-column:first-child{ order: 2; }
+#aboutChef .flex-content-column:first-child{ order: 2; padding-left: 5vw; padding-right: 5vw; }
 #aboutChef #pastry-img2{ order: 1; }
 
 div#ourFlavours {
